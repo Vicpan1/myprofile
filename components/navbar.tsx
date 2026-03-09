@@ -71,7 +71,6 @@ export function Navbar() {
             className="text-xl font-bold tracking-wide text-foreground"
           >
             {siteConfig.brand.name}
-            <span className="text-primary">{siteConfig.brand.highlight}</span>
           </a>
 
           <span className="h-5 w-px bg-border" aria-hidden="true" />
