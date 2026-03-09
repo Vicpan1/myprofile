@@ -15,8 +15,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '洲洲 | 專業自由潛水教練 & CMAS STA 台灣國家紀錄保持人',
-  description: '洲洲（潘名洲）- 專業自由潛水運動員與教練，CMAS STA 台灣國家紀錄保持人。提供單堂體驗課、初階自由潛水課程、專項訓練課程，帶你探索水下世界的魅力。',
+  title: '洲洲 | 專業自由潛水運動員與教練',
+  description: '洲洲（潘名洲）的個人網站 - 專業自由潛水運動員與教練。',
 }
 
 export const viewport: Viewport = {

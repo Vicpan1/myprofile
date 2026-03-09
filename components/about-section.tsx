@@ -99,34 +99,9 @@ export function AboutSection() {
         </div>
 
         {/* Introduction */}
-        <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+        <p className="text-muted-foreground text-lg leading-relaxed mb-14">
           {about.introduction}
         </p>
-
-        {/* Achievements */}
-        <div className="mb-14">
-          <div className="flex flex-col gap-3">
-            {about.achievements.map((achievement, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 text-foreground"
-              >
-                <span className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-                <span className="text-base">{achievement}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Core Philosophy */}
-        <div className="mb-14 p-6 rounded-xl bg-secondary/30 border border-border">
-          <h3 className="text-lg font-bold text-foreground mb-4">
-            {about.philosophy.title}
-          </h3>
-          <p className="text-muted-foreground leading-relaxed">
-            {about.philosophy.content}
-          </p>
-        </div>
 
         {/* Personal Best Records */}
         <div>
