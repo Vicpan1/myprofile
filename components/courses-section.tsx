@@ -121,20 +121,12 @@ export function CoursesSection() {
                 className="relative p-6 rounded-xl bg-card border border-border"
               >
                 <Quote size={24} className="text-primary/20 mb-4" />
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                   {testimonial.content}
                 </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
-                    <span className="text-sm font-medium text-foreground">
-                      {testimonial.name.charAt(0)}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">{testimonial.name}</p>
-                    <p className="text-xs text-muted-foreground">{testimonial.course}</p>
-                  </div>
-                </div>
+                <p className="text-xs font-medium text-primary">
+                  — {testimonial.course}
+                </p>
               </div>
             ))}
           </div>
