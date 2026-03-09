@@ -19,40 +19,27 @@ export function EquipmentSection() {
           </p>
         </div>
 
-        {/* Equipment Categories */}
-        <div className="flex flex-col gap-12">
-          {equipment.categories.map((category) => (
-            <div key={category.id}>
-              <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-3">
-                <span className="w-8 h-0.5 bg-primary rounded-full" />
-                {category.name}
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {category.items.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors"
-                  >
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <p className="text-primary font-medium text-sm">{item.brand}</p>
-                        <h4 className="text-lg font-bold text-foreground">{item.model}</h4>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {item.features.map((feature, fIdx) => (
-                        <span
-                          key={fIdx}
-                          className="text-xs px-2.5 py-1 bg-secondary text-secondary-foreground rounded-full"
-                        >
-                          {feature}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+        {/* Partners Grid */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {equipment.partners.map((partner, idx) => (
+            <div
+              key={idx}
+              className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors"
+            >
+              <a
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-bold text-foreground hover:text-primary transition-colors inline-block mb-1"
+              >
+                {partner.brand}
+              </a>
+              <p className="text-primary font-medium text-sm mb-3">
+                {partner.subtitle}
+              </p>
+              <p className="text-muted-foreground text-sm">
+                {partner.description}
+              </p>
             </div>
           ))}
         </div>

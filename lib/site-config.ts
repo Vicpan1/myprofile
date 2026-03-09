@@ -184,42 +184,30 @@ export const siteConfig = {
     sectionLabel: "Partners",
     sectionTitle: "合作夥伴",
     sectionDescription: "與專業品牌攜手合作，提供最優質的產品與服務",
-    categories: [
+    partners: [
       {
-        id: "wetsuits",
-        name: "潛水衣",
-        items: [
-          {
-            brand: "Trudive",
-            model: "專業自由潛水衣",
-            description: "高品質自由潛水專用防寒衣，提供絕佳保暖與靈活性",
-            features: ["高彈性布料", "流線剪裁", "舒適貼合"],
-          },
-        ],
+        brand: "Trudive",
+        subtitle: "多款時尚功能兼具防寒衣",
+        description: "高品質自由潛水專用防寒衣，提供絕佳保暖與靈活性",
+        url: "https://msocean.com.tw/product-category/wetsuit/trudive-wetsuit",
       },
       {
-        id: "fins",
-        name: "蛙鞋",
-        items: [
-          {
-            brand: "Official Secrets",
-            model: "專業長蛙鞋",
-            description: "專業級自由潛水長蛙，兼具效率與舒適",
-            features: ["高效推進", "輕量設計", "多款可選"],
-          },
-        ],
+        brand: "Official Secrets",
+        subtitle: "專業長蛙鞋",
+        description: "專業級自由潛水長蛙，兼具效率與舒適",
+        url: "https://www.official-secrets.com/",
       },
       {
-        id: "marketing",
-        name: "個人行銷",
-        items: [
-          {
-            brand: "嶼嶼創意",
-            model: "品牌行銷服務",
-            description: "專業運動員品牌形象規劃與行銷服務",
-            features: ["品牌定位", "社群經營", "視覺設計"],
-          },
-        ],
+        brand: "嶼嶼創意",
+        subtitle: "品牌行銷服務",
+        description: "專業運動員品牌形象規劃與行銷服務",
+        url: "https://yuyu-creative.tw/",
+      },
+      {
+        brand: "徊深潛水",
+        subtitle: "小琉球水肺潛水潛店",
+        description: "專業水肺潛水服務，探索小琉球海底世界",
+        url: "https://backtrackdiving.com/",
       },
     ],
     partnerNote: "以上品牌皆為長期合作夥伴，歡迎洽詢合作",
