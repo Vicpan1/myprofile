@@ -3,14 +3,15 @@
 import { siteConfig } from "@/lib/site-config"
 
 export function LineFloatButton() {
-  const { line } = siteConfig
+  const lineLink = siteConfig.socialLinks.find((l) => l.platform === "line")
+  if (!lineLink) return null
 
   return (
     <a
-      href={line.url}
+      href={lineLink.url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={line.ariaLabel}
+      aria-label={lineLink.ariaLabel}
       className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-[#06C755] shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300"
     >
       <svg

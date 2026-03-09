@@ -99,9 +99,44 @@ export function AboutSection() {
         </div>
 
         {/* Introduction */}
-        <p className="text-muted-foreground text-lg leading-relaxed mb-14">
+        <p className="text-muted-foreground text-lg leading-relaxed mb-12">
           {about.introduction}
         </p>
+
+        {/* Diving History */}
+        <div className="mb-14">
+          <h3 className="text-lg font-bold text-foreground mb-6">潛水歷程</h3>
+          <div className="flex flex-col gap-0">
+            {about.divingHistory.map((item, idx) => (
+              <div key={item.year} className="flex gap-5">
+                {/* Timeline line */}
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary mt-1.5 shrink-0" />
+                  {idx < about.divingHistory.length - 1 && (
+                    <div className="w-px flex-1 bg-border mt-1 mb-1" />
+                  )}
+                </div>
+                {/* Content */}
+                <div className={`pb-8 ${idx === about.divingHistory.length - 1 ? "pb-0" : ""}`}>
+                  <p className="text-sm font-bold text-primary mb-1">{item.year}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Core Philosophy */}
+        <div className="mb-14 p-6 rounded-xl border border-primary/20 bg-primary/5">
+          <h3 className="text-sm font-bold text-primary uppercase tracking-widest mb-3">
+            核心理念
+          </h3>
+          <p className="text-foreground text-base leading-relaxed">
+            {about.corePhilosophy}
+          </p>
+        </div>
 
         {/* Personal Best Records */}
         <div>
